@@ -41,9 +41,7 @@
     "build": "node ./update-build.js && craco build build",
     "tar": "node ./update-build.js && craco build && tar -cvf ./deploy.tar --exclude='.map' ./captain-definition ./build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "merge": "git merge origin/master",
-    "deploy": "npm run tar && caprover deploy -h https://captain.app.elingenierojefe.es/ -p yfZZjY+hmkflGi:jM~c9 -a healthassist-app -t ./deploy.tar"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
